@@ -5,11 +5,11 @@ public class Employee {
     private final String surname;
     private final String patronymic;
     private int department;
-    private int wages;
+    private double wages;
     private int id;
 
     //конструктор Employee
-    public Employee(String surname, String name, String patronymic, int department, int wages, int id) {
+    public Employee(String surname, String name, String patronymic, int department, double wages, int id) {
         this.surname = surname;
         this.name = name;
         this.patronymic = patronymic;
@@ -34,7 +34,7 @@ public class Employee {
         return department;
     }
 
-    public int getWages() {
+    public double getWages() {
         return wages;
     }
 
@@ -46,7 +46,7 @@ public class Employee {
         this.department = department;
     }
 
-    public void setWages(int wages) {
+    public void setWages(double wages) {
         this.wages = wages;
     }
 
