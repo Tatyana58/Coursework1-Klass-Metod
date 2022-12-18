@@ -17,6 +17,7 @@ public class Employee {
         this.wages = wages;
         this.id = id;
     }
+
     public String getName() {
         return name;
     }
@@ -51,7 +52,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return surname + "" + name + "" + patronymic + " из отдела: " + department + " с зп " + wages + " ID " + id;
+        return surname + "" + name + "" + patronymic + " из отдела №: " + department + " с зп " + wages + " ID " + id;
     }
     @Override
     public boolean equals(Object o) {
