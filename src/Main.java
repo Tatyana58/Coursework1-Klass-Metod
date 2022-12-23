@@ -16,7 +16,7 @@ public class Main {
 
         for (int i = 0; i <N ; i++){
             Employee.sumWages(collegue[i].getWages());
-        }System.out.println("Сумма зарплат всех сотрудников: "+Employee.sum);
+        }System.out.println("Сумма зарплат всех сотрудников : "+Employee.sum);
 
 
     /*public static double sumWages(){

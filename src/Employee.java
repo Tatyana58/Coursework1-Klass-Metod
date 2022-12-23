@@ -60,7 +60,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return surname + "" + name + "" + patronymic + " из отдела №: " + department + " с зп " + wages + " ID " + id;
+        return surname + "" + name + "" + patronymic + " из отдела №: " + department + " зп " + wages + " ID " + id;
     }
     @Override
     public boolean equals(Object o) {
