@@ -53,20 +53,25 @@ public class Employee {
         this.wages = wages;
     }
 
-    //Считаем сумму всех зарплат
+    //Сумму затрат на зарплаты
     public static double sumWages(double wages) {
         sum+=wages;
         return sum;
     }
-
+    //Считаем среднее значение зарплат:
     public static double averageWages(double averageSum) {
-        averageSum=sum/Employee.count;
+        averageSum=sum/count;
         return averageSum;
     }
-
-
-
-
+    public static double maxWages(double[] arr) {
+        double max= arr[0];
+        for (int j =1; j < arr.length-1; j++) {
+            if (arr[j] > max) {
+                max=arr[j];
+            }
+        }
+        return max;
+    }
     @Override
     public String toString() {
         return surname + "" + name + "" + patronymic + " из отдела №: " + department + " зп " + wages + " ID " + id;

@@ -9,16 +9,18 @@ public class Main {
         collegue[3] = new Employee("Макеев ", "Александр ", "Андреевич ", 3, 2000);
         collegue[4] = new Employee("Юдина ", "Ольга ", "Борисовна ", 1, 3000);
         collegue[5] = new Employee("Сергеев ", "Юрий ", "Витальевич ", 5, 5000);
-        collegue[6] = new Employee("", "", "", 4, 7000);
-        collegue[7] = new Employee("", "", "", 4, 5000);
-        collegue[8] = new Employee("", "", "", 4, 5000);
-        collegue[9] = new Employee("", "", "", 4, 7000);
+        collegue[6] = new Employee("Силантьева ", "ЕКатерина ", "Анатольевна ", 4, 80000);
+        collegue[7] = new Employee("Криулина ", "Евгения ", "Валерьевна ", 4, 15000);
+        collegue[8] = new Employee("Саркисьян ", "Лариса ", "Михайловна ", 4, 300.50);
+        collegue[9] = new Employee("Гречав ", "Максим ", "Павлович ", 4, 6000);
 
         for (int i = 0; i < collegue.length; i++) {
             Employee.sumWages(collegue[i].getWages());
+            //Employee.maxWages(collegue[i].getWages());
         }
         System.out.println("Сумму затрат на зарплаты " + Employee.sum);
-        System.out.println("Подсчитали среднее значение зарплат: "+Employee.averageWages(Employee.averageWages(Employee.sum)));
+        System.out.println("Подсчитали среднее значение зарплат: "+Employee.averageWages(Employee.sum));
+
 
     }
 
