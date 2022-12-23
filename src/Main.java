@@ -14,19 +14,13 @@ public class Main {
         collegue[8] = new Employee("", "", "", 4, 5000);
         collegue[9] = new Employee("", "", "", 4, 7000);
 
-        for (int i = 0; i <N ; i++){
+        for (int i = 0; i < collegue.length; i++) {
             Employee.sumWages(collegue[i].getWages());
-        }System.out.println("Сумма зарплат всех сотрудников : "+Employee.sum);
+        }
+        System.out.println("Сумму затрат на зарплаты " + Employee.sum);
+        System.out.println("Подсчитали среднее значение зарплат: "+Employee.averageWages(Employee.averageWages(Employee.sum)));
 
-
-    /*public static double sumWages(){
-        double sum = 0;
-        sum=+1();
-        return sum;
     }
-
-
-     */}
 
 
     public static void printInfo(Employee surname, Employee name, Employee patronymic, Employee department, Employee wages,Employee id) {

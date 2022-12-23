@@ -53,10 +53,19 @@ public class Employee {
         this.wages = wages;
     }
 
+    //Считаем сумму всех зарплат
     public static double sumWages(double wages) {
         sum+=wages;
         return sum;
     }
+
+    public static double averageWages(double averageSum) {
+        averageSum=sum/Employee.count;
+        return averageSum;
+    }
+
+
+
 
     @Override
     public String toString() {
