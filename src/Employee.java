@@ -7,15 +7,18 @@ public class Employee {
     private int department;
     private double wages;
     private int id;
+    static int count=0;
+    static double sum=0;
 
     //конструктор Employee
-    public Employee(String surname, String name, String patronymic, int department, double wages, int id) {
+    public Employee(String surname, String name, String patronymic, int department, double wages) {
         this.surname = surname;
         this.name = name;
         this.patronymic = patronymic;
         this.department = department;
         this.wages = wages;
-        this.id = id;
+        this.id =count;
+        count++;
     }
 
     public String getName() {
@@ -48,6 +51,11 @@ public class Employee {
 
     public void setWages(double wages) {
         this.wages = wages;
+    }
+
+    public static double sumWages(double wages) {
+        sum+=wages;
+        return sum;
     }
 
     @Override
